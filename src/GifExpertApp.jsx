@@ -3,22 +3,22 @@ import { AddCategory, GifGrid } from './Components';
 
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["Pokemon"]);
+  const [categories, setCategories] = useState(["pokemon"]);
 
-  const onAddCategory = (value) => {
+  const onNewCategory = (value) => {
     if (
       categories
         .map((c) => c.toLocaleLowerCase())
         .includes(value.toLocaleLowerCase())
     )
       return;
-    setCategories([value, ...categories]);
+    setCategories([value.toLocaleLowerCase(), ...categories]);
   };
 
   return (
     <>
       <h1>GifExpertApp</h1>
-      <AddCategory onAddCategory={(value) => onAddCategory(value)} />
+      <AddCategory onNewCategory={(value) => onNewCategory(value)} />
       {categories.map((categorie) => (
         <GifGrid key={categorie} category={categorie} />
       ))}

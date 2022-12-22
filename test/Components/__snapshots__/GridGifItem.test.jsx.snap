@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba en <GridGifItem/> Debe de hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Pokemon 2000"
+      src="https://media.tenor.com/R1KctPuHA8sAAAAd/miedo-perro.gif"
+    />
+    <p>
+      Pokemon 2000
+    </p>
+  </div>
+</div>
+`;
